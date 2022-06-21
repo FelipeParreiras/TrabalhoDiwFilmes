@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Movie';
+    src: url('../font/SF\ Movie\ Poster\ Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0px;
+}
+h1{
+    font-family: 'Movie';
+    font-size: 4rem;
+}
+a{
+    text-decoration: none;
+    border-bottom: 0.2rem solid;
+    padding: 2%;
+    color: white;
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+.selected{
+    color: #377CE6;
+    border-bottom-color: #377CE6;
+}
+.nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: sticky;
+    top: 0%;
+}
+.nav h1{
+    color: #377CE6;
+}
+.navButton{
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.mImg{
+    width: 100%;
+}
+.container{
+    width: 100%;
+}
+.movie{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    border-radius: 1.5rem;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+@media (min-width: 768px) {
+    a{
+        font-size: 1.5rem;
+    }
+    a:hover{
+        color: #377CE6;
+        border-bottom-color: #377CE6;
+    }
+    .mImg{
+        width: 25rem;
+        border-radius: 2rem;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .movie{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 3rem;
+        border-radius: 1.5rem;
+        padding: 5rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Freefas Films</title>
+</head>
+<body>
+    <div class="nav">
+        <h1>Freefas Films</h1>
+        <div class="navButton">
+            <a href="../topRated/index.html">Melhor Avaliação</a>
+            <a href="../Home/index.html" >Mais Populares</a>
+            <a href=""class="selected">Pesquisar</a>
+        </div>
+    </div>
+    <div class="pesquisa">
+        <input type="text" id="pesquisa" class="inputPesquisa" placeholder="Ex: Sonic">
+        <button onclick="pesquisar()" class="btnPesquisa">Pesquisar</button>
+    </div>
+    <div class="ListaFilmes" id="listaFilmes"></div>
+    <script src="./js.js"></script>
+</body>
+</html>

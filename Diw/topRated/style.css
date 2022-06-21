@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Movie';
+    src: url('../font/SF\ Movie\ Poster\ Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0px;
+}
+h1{
+    font-family: 'Movie';
+    font-size: 4rem;
+}
+a{
+    text-decoration: none;
+    border-bottom: 0.2rem solid;
+    padding: 2%;
+    color: white;
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+.selected{
+    color: #377CE6;
+    border-bottom-color: #377CE6;
+}
+.nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: sticky;
+    top: 0%;
+}
+.nav h1{
+    color: #377CE6;
+}
+.navButton{
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.Listagem{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.ListaFilmes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mImg{
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.container{
+    width: 70%;
+}
+.movie{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1.5rem;
+}
+@media (min-width: 768px) {
+    a{
+        font-size: 1.5rem;
+    }
+    a:hover{
+        color: #377CE6;
+        border-bottom-color: #377CE6;
+    }
+    .ListaFilmes{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around,;
+        flex-flow: row wrap;
+    }
+    .container{
+        width: 20%;
+    }
+    .mImg{
+        width: 100%;
+        height: 30rem;
+    }
+    .mImg:hover{
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+    .movie{
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        margin-bottom: 5rem;
+    }
+    .movie:hover{
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+}
